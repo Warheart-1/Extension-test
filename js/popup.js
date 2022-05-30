@@ -12,7 +12,7 @@ async function loadJSON(file) {
 }
 
 // Enregistre les données du fichier json dans une variable
-const data = await loadJSON('../config/data.json')
+const data = await loadJSON('../config/config.json')
 
 const url = `https://id.twitch.tv/oauth2/token?client_id=${data.client_id}&client_secret=${data.client_secret}&grant_type=client_credentials`
 
