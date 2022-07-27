@@ -65,14 +65,25 @@ async function renderToken() {
 }
 
 // Affiche si le streamer est en ligne ou non (doit attendre la réponse de la fonction renderToken())
-async function renderStream() {
+export default async function renderStream() {
   const dataStream = await renderToken()
   if (dataStream.data[0]){
-      info.innerHTML = "Streaming"
+      return true, dataStream
   } else {
-      info.innerHTML = "Not Streaming"
+      return false, dataStream
+  }
+} 
+
+async function changeInfo() {
+  const dataStream = await renderStream()
+  console.log(dataStream)
+  if (dataStream.data[0]){
+      info.innerHTML = `${dataStream.data[0].user_name} est en ligne !`
+  } else {
+      info.innerHTML = `Aucun stream en ligne`
   }
 }
 
+changeInfo()
 // Inialisation de la fonction renderStream()
-renderStream()
+setInterval(changeInfo, 60000);

@@ -1,0 +1,77 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+
+html,body{
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #a592a8 0%, rgba(193, 117, 211, 0) 0.01%), linear-gradient(180deg, #e1afc4 0%, #ef5da8 0.01%, #C9365B 97.92%);
+    backdrop-filter: blur(4px);
+    color: #fff;
+}
+
+h1{
+    margin-bottom: 2px;
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+    font-size: 14px;
+}
+
+#info{
+    font-size: 24px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-res-aika{
+    display: inline;
+    text-align: center;
+    width: auto;
+    margin-top: 10px;
+}
+
+.icon{
+    margin-bottom: 1px;
+}
+
+.fa-brands{
+    margin-right: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #C9365B;
+}
+
+.container-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.container{
+    margin-top: 70px;
+    width: 240px;
+    height: 240px;
+    background-image: url("../images/tapnuki.gif");
+    background-repeat: no-repeat;
+    background-size: 240px 240px;
+}
+
+/* Rectangle 1 */
+
+
+
+
